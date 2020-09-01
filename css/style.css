@@ -1,0 +1,109 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+/* ============== NAVBAR =============== */
+
+/* ============== HERO SECTION =============== */
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background: url('../img/city-fog.png');
+  background-size: cover;
+}
+.headline {
+  position: fixed;
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+    sans-serif;
+  font-size: 8rem;
+  line-height: 9rem;
+  color: #ffffffe0;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
+}
+.mask {
+  mask-image: url('../img/mask.png');
+  mask-size: cover;
+  -webkit-mask-image: url('../img/mask.png');
+  -webkit-mask-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ============== next hero SECTION =============== */
+
+.content {
+  width: 100%;
+  height: 200vh;
+  background: #989898;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(167,167,167,1) 25%);
+}
+
+.text-heading {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+  sans-serif;
+font-size: 7rem;
+/* line-height: 9rem; */
+width: 100%;
+text-align: center;
+color: #526778d3;
+text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
+}
+
+.guessed-text {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+  sans-serif;
+  font-size: 6rem;
+  width: 100%;
+  text-align: left;
+  color: #6c706cd3;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
+
+}
+
+/* .scene:hover,
+focus {
+  transform: perspective(1000px) translateX(500px);
+} */
+
+/*============= MEDIA QUERIES =============*/
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width */
+
+@media (max-width: 575.98px) {
+
+  .headline {
+    font-size: 3.7rem;
+    line-height: 4.3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 319.98px) {
+  .headline {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: initial;
+  }
+}
