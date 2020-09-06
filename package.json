@@ -1,0 +1,27 @@
+{
+  "name": "landingstj",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    // "boot": "./node_modules/bootstrap --watch ./scss/app.scss:./dist/css/style.css",
+    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./dist/css/style.css",
+    "minify": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css --style compressed",
+    "start": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristina-Q/LandingSTJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristina-Q/LandingSTJ/issues"
+  },
+  "homepage": "https://github.com/cristina-Q/LandingSTJ#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "sass": "^1.26.10"
+  }
+}
