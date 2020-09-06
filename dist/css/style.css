@@ -23,9 +23,11 @@
 
 .headline {
   position: fixed;
+  top: 3%;
+  left: 5%;
   font-family: "Anton", "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
-  font-size: 8rem;
-  line-height: 9rem;
+  font-size: 4rem;
+  line-height: 5rem;
   color: #ffffffe0;
   text-align: left;
   text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
