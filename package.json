@@ -4,7 +4,6 @@
   "description": "landing page",
   "main": "index.js",
   "scripts": {
-    // "boot": "./node_modules/bootstrap --watch ./scss/app.scss:./dist/css/style.css",
     "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./dist/css/style.css",
     "minify": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css --style compressed",
     "start": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css",
