@@ -12,6 +12,10 @@
       type="text/css"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
@@ -35,16 +39,7 @@
           into the cloud
         </h1>
         <nav class="navbar navbar-light navbar-expand-sm justify-content-end">
-          <button
-            type="button"
-            class="navbar-toggler ml-auto bg-light"
-            data-toggle="collapse"
-            data-target="#navbarMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse justify-content-end" id="navbarMenu">
+          <div class="collapse justify-content-end" id="navCollapse">
             <ul class="nav flex-column align-items-end">
               <li class="nav-item mb-2">
                 <a href="https://storj.io/" class="nav-link"
@@ -63,6 +58,34 @@
               </li>
             </ul>
           </div>
+          <button
+            type="button"
+            class="navbar-toggler bg-light"
+            data-toggle="collapse"
+            data-target="#navCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+
+        <nav class="navbar navbar-light justify-content-end" id="navbarclassic">
+          <ul class="nav flex-column align-items-end">
+            <li class="nav-item mb-2">
+              <a href="https://storj.io/" class="nav-link"
+                >Storj Labs Project</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="https://storj.io/community/" class="nav-link"
+                >Storj Community</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://storj.io/whitepaper/" class="nav-link"
+                >Read the whitepaper</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

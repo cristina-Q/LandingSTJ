@@ -1,10 +1,19 @@
 /* ============== NAV =============== */
+#navCollapse {
+  background: rgba(255, 254, 254, 0.842);
+  flex-grow: 1;
+}
+
+#navbarclassic {
+  display: none;
+}
 
 .nav-item,
 .nav-link {
   color: rgb(12, 113, 133);
-  font-family: 'Josefin Sans';
-  font-weight: 900;
+  font-family: 'Lalezar', cursive;
+  font-size: 1.2rem;
+  // font-weight: 900;
   letter-spacing: 0.5px;
   border-right: 1.5px solid rgb(97, 94, 94, 0.7);
 }
@@ -24,7 +33,7 @@
 
 .headline {
   position: fixed;
-  top: 3%;
+  top: 5%;
   left: 5%;
   font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
     sans-serif;
@@ -58,3 +67,14 @@
 
 // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
+
+@media (min-width: 576px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  #navbarclassic {
+    display: flex;
+  }
+}
