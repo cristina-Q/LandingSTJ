@@ -4,9 +4,9 @@
   "description": "landing page",
   "main": "index.js",
   "scripts": {
-    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./dist/css/style.css",
-    "minify": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css --style compressed",
-    "start": "./node_modules/.bin/sass ./scss/app.scss ./dist/css/style.css",
+    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./css/style.css",
+    "minify": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css --style compressed",
+    "start": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
