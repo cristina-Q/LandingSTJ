@@ -1,3 +1,4 @@
+/* ============== navbar =============== */
 #navCollapse {
   background: rgba(255, 254, 254, 0.842);
   flex-grow: 1;
@@ -9,19 +10,19 @@
 
 .nav-item,
 .nav-link {
-  color: rgb(12, 113, 133);
-  font-family: 'Lalezar', cursive;
+  color: #526778;
+  font-family: 'Anton';
   font-size: 1.2rem;
-  // font-weight: 900;
-  letter-spacing: 0.5px;
-  border-right: 1.5px solid rgb(97, 94, 94, 0.7);
+  letter-spacing: 1px;
+  border-right: 7px groove rgba(256, 250, 248, 0.7);
+  border-radius: 0px 40px 40px 0px;
 }
 .nav-link:hover {
   color: gray;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff80;
 }
 
-/* ============== HERO SECTION =============== */
+/* ============== hero =============== */
 
 .parallax {
   width: 100%;
@@ -39,8 +40,8 @@
   font-size: 4rem;
   line-height: 5rem;
   color: #ffffffe0;
-  text-align: left;
   text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
+  text-align: left;
 }
 
 .mask {
@@ -50,6 +51,90 @@
   -webkit-mask-size: cover;
   width: 100%;
   height: 150vh;
+}
+
+/* ============== next-hero SECTION =============== */
+
+.text-heading {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+    sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #526778d3;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
+}
+
+.guessed-text {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+    sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  text-align: left;
+  color: #6c706cd3;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
+}
+
+.text-motto {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+    sans-serif;
+  font-size: 8rem;
+  line-height: 9rem;
+  color: #ffffffe0;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
+}
+
+.text-motto2 {
+  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
+    sans-serif;
+  // font-size: 7rem;
+  // line-height: 8rem;
+  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
+  color: #232c33d0;
+}
+
+.text-transparent {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.bethecoloud {
+  background: linear-gradient(270deg, #232c33, #7e8489, #aab5bf, #000000);
+  //   background-position: 0 0;
+
+  //   animation: anim-gradientbg 5s ease infinite;
+  // }
+
+  // @keyframes anim-gradientbg {
+  //   0% {
+  //     background-position: 0% 50%;
+  //   }
+  //   50% {
+  //     background-position: 100% 50%;
+  //   }
+  //   100% {
+  //     background-position: 0% 50%;
+  //   }
+}
+
+.shape {
+  // position: relative;
+  height: 700px;
+  background: url('../img/city-fog1920tiny.png') repeat-x left top;
+  background-size: cover;
+
+  animation: anim-background 200s linear infinite;
+}
+
+@keyframes anim-background {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 50000px 0;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -68,12 +153,26 @@
 // @media (min-width: 1200px) { ... }
 
 @media (min-width: 576px) {
-  .headline {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
-
   #navbarclassic {
     display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  // .text-motto {
+  //   font-size: 6rem;
+  //   line-height: 7rem;
+  // }
+}
+
+@media (min-width: 1200px) {
+  .headline {
+    font-size: 8rem;
+    line-height: 9rem;
   }
 }
