@@ -1,3 +1,4 @@
+/* ============== test =============== */
 /* ============== navbar =============== */
 #navCollapse {
   background: rgba(255, 254, 254, 0.842);
@@ -90,15 +91,27 @@
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.bethecoloud {
-  background: linear-gradient(270deg, #232c33, #7e8489, #aab5bf, #000000);
+.bethecloud {
+  border: 3px solid black;
+  background: url("../img/cloud-bg.png") repeat left top;
+  background-position: 0 0;
+  background-size: cover;
+  animation: anim-cloudbg 10s linear 0;
 }
 
+@keyframes anim-cloudbg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 5000px 0;
+  }
+}
 .shape {
   height: 700px;
-  background: url("../img/city-fog1920tiny.png") repeat-x left top;
   background-size: cover;
-  animation: anim-background 200s linear infinite;
+  background: url("../img/city-fog1920tiny.png") repeat-x left top;
+  animation: anim-background 300s linear 0;
 }
 
 @keyframes anim-background {
