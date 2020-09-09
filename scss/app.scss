@@ -1,6 +1,7 @@
 /* ============== test =============== */
 
 /* ============== navbar =============== */
+
 #navCollapse {
   background: rgba(255, 254, 254, 0.842);
   flex-grow: 1;
@@ -43,7 +44,6 @@
   line-height: 5rem;
   color: #ffffffe0;
   text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
-  text-align: left;
 }
 
 .mask {
@@ -66,76 +66,42 @@
   text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
 }
 
-.guessed-text {
-  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
-    sans-serif;
-  font-size: 3rem;
-  width: 100%;
-  text-align: left;
-  color: #6c706cd3;
-  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgb(255, 255, 255);
-}
-
 .text-motto {
   font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
     sans-serif;
-  font-size: 8rem;
-  line-height: 9rem;
-  color: #ffffffe0;
-  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
+  font-size: 7rem;
+  line-height: 8rem;
+  color: #00000057;
+  text-shadow: 3px -3px 12px #edececcc;
+  word-wrap: break-word;
 }
 
-.text-motto2 {
-  font-family: 'Anton', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold',
-    sans-serif;
-  // font-size: 7rem;
-  // line-height: 8rem;
-  text-shadow: 0 13.36px 8.896px #858380, 0 -2px 1px rgba(255, 255, 255, 0.925);
-  color: #232c33d0;
+.wrapper-shape {
+  background: linear-gradient(180deg, white 8%, #6c6c76 34%, #5a5a61 39%);
 }
-
-.text-transparent {
-  -webkit-text-stroke: 1px black;
-  color: white;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.bethecloud {
-  border: 3px solid black;
-  // height: 700px;
-  // background: linear-gradient(270deg, #232c33, #7e8489, #aab5bf, #000000);
-  background: url('../img/cloud-bg.png') repeat left top;
-  background-position: 0 0;
-  background-size: cover;
-
-  animation: anim-cloudbg 10s linear 0;
-}
-
-@keyframes anim-cloudbg {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 5000px 0;
-  }
-}
-
 .shape {
-  height: 700px;
-  background-size: cover;
-  background: url('../img/city-fog1920tiny.png') repeat-x left top;
+  height: 500px;
+  background: url('../img/banner-clouds.png') repeat center center;
 
-  animation: anim-background 300s linear 0;
+  animation: anim-background 4000s linear 1;
 }
 
 @keyframes anim-background {
   from {
-    background-position: 0 0;
+    background-position: center center;
   }
 
   to {
-    background-position: 50000px 0;
+    background-position: 50000px 0px;
+  }
+}
+
+/* ============== next-hero SECTION =============== */
+.next {
+  h2 {
+    span {
+      color: #2582ff;
+    }
   }
 }
 
@@ -165,11 +131,10 @@
     font-size: 6rem;
     line-height: 7rem;
   }
-
-  // .text-motto {
-  //   font-size: 6rem;
-  //   line-height: 7rem;
-  // }
+  .text-motto {
+    font-size: 8rem;
+    line-height: 9rem;
+  }
 }
 
 @media (min-width: 1200px) {
