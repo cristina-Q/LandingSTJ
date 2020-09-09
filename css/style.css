@@ -1,5 +1,19 @@
-/* ============== test =============== */
 /* ============== navbar =============== */
+li {
+  list-style: none;
+}
+
+.nav2-item {
+  background-color: #1d1d1d;
+}
+.nav2-item .nav2-link {
+  color: white;
+}
+.nav2-item .nav2-link:hover {
+  color: #afafaf;
+  text-decoration: none;
+}
+
 #navCollapse {
   background: rgba(255, 254, 254, 0.842);
   flex-grow: 1;
@@ -73,13 +87,11 @@
 .wrapper-shape {
   background: linear-gradient(180deg, white 8%, #6c6c76 34%, #5a5a61 39%);
 }
-
-.shape {
+.wrapper-shape .shape {
   height: 500px;
   background: url("../img/banner-clouds.png") repeat center center;
   animation: anim-background 4000s linear 1;
 }
-
 @keyframes anim-background {
   from {
     background-position: center center;
@@ -88,16 +100,24 @@
     background-position: 50000px 0px;
   }
 }
+
 /* ============== next-hero SECTION =============== */
 .next h2 span {
   color: #2582ff;
 }
 
-@media (min-width: 576px) {
-  #navbarclassic {
-    display: flex;
-  }
+.text-DLT {
+  color: #2582ff;
 }
+.text-DLT h3 {
+  border: 5px solid gray;
+  font-size: 5rem;
+  font-family: "Anton";
+}
+.text-DLT .first {
+  font-size: 4rem;
+}
+
 @media (min-width: 768px) {
   .headline {
     font-size: 6rem;
@@ -107,6 +127,10 @@
   .text-motto {
     font-size: 8rem;
     line-height: 9rem;
+  }
+
+  #navbarclassic {
+    display: flex;
   }
 }
 @media (min-width: 1200px) {
