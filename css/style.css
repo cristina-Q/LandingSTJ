@@ -107,19 +107,18 @@ li {
 }
 
 .text-DLT {
-  perspective: 1000px;
   color: #2582ff;
 }
 .text-DLT h3 {
   letter-spacing: 4px;
   border: 4px solid gray;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Anton";
   text-shadow: 3px 1px 5px black;
 }
 .text-DLT .first {
   color: gray;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {

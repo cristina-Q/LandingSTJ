@@ -120,18 +120,18 @@ li {
 }
 
 .text-DLT {
-  perspective: 1000px;
   color: $color-accent;
+
   h3 {
     letter-spacing: 4px;
     border: 4px solid gray;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Anton';
     text-shadow: 3px 1px 5px black;
   }
   .first {
     color: gray;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
