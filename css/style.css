@@ -84,11 +84,11 @@ li {
   word-wrap: break-word;
 }
 
-.wrapper-shape {
+.next-hero {
   background: linear-gradient(180deg, white 8%, #6c6c76 34%, #5a5a61 39%);
 }
-.wrapper-shape .shape {
-  height: 500px;
+.next-hero .shape {
+  height: 450px;
   background: url("../img/banner-clouds.png") repeat center center;
   animation: anim-background 4000s linear 1;
 }
