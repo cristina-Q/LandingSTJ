@@ -144,7 +144,7 @@ li {
   background-color: black;
   transition: 0.7s cubic-bezier(0, 2, 0.7, 2);
 }
-.text-DLT .fancy-btn:hover span {
+.text-DLT .fancy-btn:hover span, .text-DLT .fancy-btn:focus span {
   height: 130%;
   transition: 0.4s cubic-bezier(0.1, 1, 0.2, 4);
 }
@@ -198,7 +198,8 @@ li {
   transition: color 0.5s;
   z-index: 1000;
 }
-.text-DLT .fancy-btn p:hover {
+.text-DLT .fancy-btn p:hover,
+.text-DLT .fancy-btn :focus {
   color: #969393;
 }
 
