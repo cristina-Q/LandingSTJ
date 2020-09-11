@@ -139,11 +139,50 @@
         <h3 class="text-left ml-1 pl-1 p-md-3">
           <span class="first">backed by</span> Distributet Ledger
         </h3>
-        <button class="px-5 py-2 my-5">Check Whitepapper</button>
+
+        <div class="filter-container">
+          <button class="fancy-btn my-5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p class="text-center my-auto">Check Whitepapper</p>
+          </button>
+        </div>
+
+        <svg
+          style="position: absolute; top: -99999px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <filter id="liq">
+              <feGaussianBlur stdDeviation="10" />
+              <feColorMatrix
+                values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 1 0 60 -15"
+              />
+              <feBlend in="SourceGraphic" />
+            </filter>
+          </defs>
+        </svg>
       </div>
     </section>
 
-    <section class="dummy"></section>
+    <section class="dummy">
+      <div class="divtest">
+        <div class="one"></div>
+        <div class="two"></div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
