@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <title>Decentralized Cloud - Storj</title>
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <!-- <link rel="shortcut icon" href="img/favicon.png" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -188,6 +188,26 @@
         <div class="two"></div>
       </div>
     </section>
+
+    <script>
+      let burl = 'https://cors-anywhere.herokuapp.com/https://api.binance.com';
+
+      let query = '/api/v3/trades';
+
+      query += '?symbol=STORJ';
+
+      let url = burl + query;
+
+      let theRequest = new XMLHttpRequest();
+
+      theRequest.open('GET', url + '?' + 'STORJ', true);
+
+      theRequest.onload = function () {
+        console.log(theRequest.responseText);
+      };
+
+      theRequest.send();
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
