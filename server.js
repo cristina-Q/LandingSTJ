@@ -1,16 +1,17 @@
-var http = require('http');
-var fs = require('fs');
 
-const PORT = 8080;
+const http = require('http');
+const fs = require('fs');
+const url = require('url');
 
-fs.readFile('./index.html', function (err, html) {
-  if (err) throw err;
+const hostname = '139.162.153.214';
+const port = 8080;
 
-  http
-    .createServer(function (request, response) {
-      response.writeHeader(200, { 'Content-Type': 'text/html' });
-      response.write(html);
-      response.end();
-    })
-    .listen(PORT);
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  fs.createReadStream('index.html').pipe(res);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
